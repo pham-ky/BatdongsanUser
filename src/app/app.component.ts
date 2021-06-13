@@ -8,7 +8,7 @@ import { AfterViewInit, Component, Injector, OnInit, Renderer2 } from '@angular/
 export class AppComponent implements OnInit, AfterViewInit{
   title = 'BatdongsanUser';
   public _renderer: any;
-
+  
   constructor(injector: Injector) {
     this._renderer = injector.get(Renderer2);
   }

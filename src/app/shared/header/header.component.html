@@ -13,7 +13,9 @@
                 <div class="list-unstyled topbar-right">
                     <ul class="topbar-link">
                         <li><a href="#" title="">Liên hệ chúng tôi</a></li>
-                        <li><a href="#" title="">Đăng nhập / Đăng ký</a></li>
+                        
+                        <li *ngIf="user!=null"><a (click)="logout()" title="Đăng xuất" style="font-weight: bold;">{{user.taiKhoan}}</a></li>
+                        <li *ngIf="id == null"><a [routerLink]="[ 'customer/login' ]" title="Đăng nhập">Đăng nhập</a></li>
                     </ul>
                     <ul class="topbar-sosmed">
                         <li>

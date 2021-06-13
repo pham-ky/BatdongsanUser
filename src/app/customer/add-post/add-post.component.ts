@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-post.component.css']
 })
 export class AddPostComponent implements OnInit {
-
+myValue: any;
   constructor() { }
 
   ngOnInit(): void {
